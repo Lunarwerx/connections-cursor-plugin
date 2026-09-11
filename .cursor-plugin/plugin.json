@@ -1,0 +1,23 @@
+{
+  "name": "connections",
+  "displayName": "Connections",
+  "version": "1.0.0",
+  "description": "Connect Cursor and Grok Bot to Connections through its hosted MCP server: host and ticket events, import and search contacts, browse and post Deal Flow marketplace deals, keep notes and agent memory, and take payments. Sign in with a Connections account on first use.",
+  "author": {
+    "name": "Connections Global LLC",
+    "email": "support@connections.icu"
+  },
+  "homepage": "https://connections.icu",
+  "repository": "https://github.com/Lunarwerx/connections-cursor-plugin",
+  "license": "MIT",
+  "logo": "assets/logo.png",
+  "keywords": [
+    "connections",
+    "connections icu",
+    "connections mcp",
+    "deal flow",
+    "events",
+    "contacts",
+    "mcp"
+  ]
+}

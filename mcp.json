@@ -1,0 +1,7 @@
+{
+  "mcpServers": {
+    "connections": {
+      "url": "https://studio.connections.icu/v1/mcp"
+    }
+  }
+}
