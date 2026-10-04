@@ -1,9 +1,9 @@
-# Connections for Cursor and Grok Bot
+# Connections for Cursor, Grok Bot and Claude Code
 
 Connections is an AI-first business platform: events with ticketing, contacts, the Deal Flow
 marketplace, notes and memory, and payments, reachable from any assistant through one hosted
-MCP server. This plugin adds that server to Cursor and Grok Bot. Nothing runs locally; you sign in
-with your Connections account in the browser the first time a tool is called.
+MCP server. This plugin adds that server to Cursor, Grok Bot and Claude Code. Nothing runs
+locally; you sign in with your Connections account in the browser the first time a tool is called.
 
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
 
@@ -11,6 +11,8 @@ with your Connections account in the browser the first time a tool is called.
 
 - **Cursor:** Customize / Marketplace, search **Connections**, then Add.
 - **Grok Bot:** sidebar account, **Settings -> Plugins**, search **Connections**, then Add.
+- **Claude Code:** run `/plugin marketplace add Lunarwerx/connections-cursor-plugin`, then
+  `/plugin install connections@connections-icu`.
 
 The first tool call opens a Connections sign-in page. Approve it once and the session persists.
 There is no API key or token to paste, and the plugin never asks for one.
@@ -42,11 +44,11 @@ to, what is live on Deal Flow, and what to do next.
 
 The plugin connects only to `https://studio.connections.icu/v1/mcp`, over streamable HTTP.
 Authentication is OAuth 2.1 with PKCE (S256) and dynamic client registration, against
-`accounts.connections.icu`.
+`accounts.connectionsapi.com`, the authorization server the protected-resource metadata names.
 
 - `https://studio.connections.icu/v1/mcp` - hosted MCP server
 - `https://studio.connections.icu/.well-known/oauth-protected-resource` - protected-resource metadata
-- `https://accounts.connections.icu/oauth/authorize`, `/oauth/token`, `/oauth` - OAuth 2.1 and registration
+- `https://accounts.connectionsapi.com/oauth/authorize`, `/oauth/token`, `/oauth` - OAuth 2.1 and registration
 
 No API key, secret or environment variable is read or stored, and nothing is written to disk. The
 plugin ships an MCP server definition and nothing else: no rules, skills, agents, commands, hooks

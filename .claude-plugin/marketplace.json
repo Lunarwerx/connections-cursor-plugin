@@ -1,0 +1,19 @@
+{
+  "name": "connections-icu",
+  "owner": {
+    "name": "Connections Global LLC",
+    "email": "support@connections.icu"
+  },
+  "metadata": {
+    "description": "The Connections plugin for Claude Code: one hosted MCP server for events, contacts, Deal Flow, notes and payments."
+  },
+  "plugins": [
+    {
+      "name": "connections",
+      "source": "./",
+      "description": "Connect Claude to Connections through its hosted MCP server: events, contacts, Deal Flow, notes and memory, and payments.",
+      "category": "productivity",
+      "homepage": "https://connections.icu"
+    }
+  ]
+}
